@@ -1,12 +1,13 @@
 .Hangman {
-  width: 400px;
   color: black;
   text-align: center;
-  zoom: 1.3;
+  width: 100vw; 
+  height: 100vh; 
+  overflow-y: auto;
 }
 
 .Hangman img {
-  border: 10px solid white;
+  border: 0.3rem solid white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.27),
     0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
@@ -18,8 +19,8 @@
   margin-top: 0;
 }
 
-.Hangman-word {
-  letter-spacing: 1em;
+.correct-guess {
+  letter-spacing: 0.5em;
   margin: 0.4em -1em 0.2em 0;
   font-size: 2rem;
 }
@@ -36,15 +37,15 @@
   font-family: inherit;
   font-size: 1rem;
   cursor: pointer;
-  width: 30px;
-  margin: 5px 2px 2px 2px;
-  letter-spacing: 1px;
+  width: 1.5rem;
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  letter-spacing: 1rem;
   outline: none;
   background: #ffc107;
   color: #fff;
-  box-shadow: 0 6px #ff9800;
-  border-radius: 5px;
-  padding-top: 4px;
+  box-shadow: 0 0.4rem #ff9800;
+  border-radius: 0.3rem;
+  padding-top: 0.2rem;
 }
 
 .Hangman button:hover {
@@ -55,4 +56,8 @@
   background: #bdbdbd;
   color: #eeeeee;
   box-shadow: 0 6px #9e9e9e;
+}
+
+.msg-display{
+  font-size: 1.5rem;
 }
